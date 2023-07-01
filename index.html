@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Poppins:wght@300;500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/scrollbar.css">
+    
+    <title>Calcular Proporcional</title>
+</head>
+<body>
+    <main>
+        <ul class="listagem-planos">
+            <li class="calculo-planos">
+
+                <div class="inf">
+                    <p>' Sempre quando for alterar o vencimento, agendamento ou plano após um calculo já feito, clique no botão RECALCULAR. '</p>
+                </div>
+
+                <div class="ven">
+                    <span>VENCIMENTO</span>
+                </div>
+                <select name="vencimentos" id="lista-vencimentos">
+                    <option value="vazio"></option>
+                    <option value="cinco">05</option>
+                    <option value="dez">10</option>
+                    <option value="quinze">15</option>
+                    <option value="vinte">20</option>
+                    <option value="vintecinco">25</option>
+                </select>
+
+                <div class="data">
+                    <span>DIA AGENDADO</span>
+                </div>
+                <select name="agendamentos" id="lista-agendamento">
+                    <option value="vazio"></option>
+                    <option value="um">01</option>
+                    <option value="dois">02</option>
+                    <option value="tres">03</option>
+                    <option value="quatro">04</option>
+                    <option value="cinco">05</option>
+                    <option value="seis">06</option>
+                    <option value="sete">07</option>
+                    <option value="oito">08</option>
+                    <option value="nove">09</option>
+                    <option value="dez">10</option>
+                    <option value="onze">11</option>
+                    <option value="doze">12</option>
+                    <option value="treze">13</option>
+                    <option value="quatorze">14</option>
+                    <option value="quinze">15</option>
+                    <option value="dezeseis">16</option>
+                    <option value="dezesete">17</option>
+                    <option value="dezoito">18</option>
+                    <option value="dezenove">19</option>
+                    <option value="vinte">20</option>
+                    <option value="vinteum">21</option>
+                    <option value="vintedois">22</option>
+                    <option value="vintetres">23</option>
+                    <option value="vintequatro">24</option>
+                    <option value="vintecinco">25</option>
+                    <option value="vinteseis">26</option>
+                    <option value="vintesete">27</option>
+                    <option value="vinteoito">28</option>
+                    <option value="vintenove">29</option>
+                    <option value="trinta">30</option>
+                </select>
+
+                <div class="informacoes">
+                    <span>PLANO</span>
+                </div>
+                <select name="planos" id="lista-planos">
+                    <option value="vazio"></option>
+                    <option value="comboCem">COMBO 100 + 100</option>
+                    <option value="comboTrezentos">COMBO 300 + 100</option>
+                    <option value="comboQuatrocentos">COMBO 400 + 100</option>
+                    <option value="comboQuinhentos">COMBO 500 + 100</option>
+                    <option value="comboSeiscentos">COMBO 600 + 100</option>
+                    <option value="comboSetecentos">COMBO 700 + 100</option>
+                </select>                
+
+                <div class="diasUso">
+                    <span>DIAS DE USO</span>
+                </div>
+                <ul class="uso">
+                    <input type="text" id="diasDeUso" readonly>
+                </ul>
+
+                <div class="resultado">
+                    <span>PROPORCIONAL</span>
+                </div>
+                <ul class="results">
+                    <input type="text" id="result" readonly>
+                </ul>
+
+                <a href="./index.html"><button id="reset">RECALCULAR</button></a>
+            </li>
+    </main>
+    <script src="./src/js/script.js"></script>
+</body>
+</html>
